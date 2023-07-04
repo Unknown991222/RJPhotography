@@ -168,6 +168,16 @@ input ,textarea{
 .image-grid-row-2{
     grid-row: span 3;
 }
+@media screen and(max-width:800px){
+	body{
+		width: 100%;
+	}
+}
+@media screen and(min-width:300px){
+	body{
+		width: 100%;
+	}
+}
 
 @media screen and (max-width:1024px) {
    .image-grid{
