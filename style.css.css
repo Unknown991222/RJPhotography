@@ -1,7 +1,7 @@
 body{
 	
 	color: #fff;
-	font-family:esthetique ;
+	font-family:Mustard Med;
 	font-size: large;
 	line-height: 1.5em;
 }
@@ -18,7 +18,7 @@ ul{
 }
 #container{
 	background:rgba(rgb(117, 30, 30,0.4));
-	width: 960px;
+	width: 100%;
 	margin: 30px auto;
 	overflow:hidden;
 	padding:10px;
@@ -48,7 +48,7 @@ ul{
 }
 #nav .active{
 	font-weight: bold;
-	color: blue;
+	color: whitesmoke;
 }
 #main p{
 	padding-left: auto;
@@ -63,8 +63,8 @@ ul{
 	width: 100%;
 }
 #main{
-	float: left;
-	width: 60%;
+	float: right;
+	width: 100%;
 }
 
 #sidebar{
@@ -125,20 +125,66 @@ input ,textarea{
 	color: #fff;
 }
 .contact a button{
-	font-size: larger;
-	font-weight: bolder;
+	font-size: large;
+	font-weight: bold;
 	width:100%;
 	height: 100%;
 	background-color:silver;
-	padding:20px;
+	margin-left: 5px;
+
 }
 .container1{
 	padding-left: 20px;
 	position: relative;
-	display: flex;
-	justify-content: center;
+	display: inline-block;
+	justify-content:center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
-	padding: 20px 100px 20px 20px;
+	width: 90%;
+	height: 90%;
+	/*padding: 20px 100px 20px 20px;*/
 }
+.image-grid{
+    --gap:14px;
+    --num-cols:4;
+	
+    --row-height:300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--num-height);
+    gap: var(--gap);
+}
+.image-grid > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-grid-col-2{
+    grid-column: span 4;
+}
+.image-grid-row-2{
+    grid-row: span 4;
+}
+
+@media screen and (max-width:1024px) {
+   .image-grid{
+     --num-cols:2;
+     --row-height:200px;
+   }
+   
+}
+div .inline{
+	display: inline-block;
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+div .inline button{
+	border-style: none;
+	font-weight: bolder;
+	background-color: #E1E1E1;
+}
+

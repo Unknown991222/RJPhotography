@@ -16,12 +16,16 @@
 		}
 		*/
 		body{
-		background-color: #C0C0C0 ;
+		background-color: beige;
 
 		}
 		#main{
-			border: 3px solid rgba(0,0,0,0.8);
-			background-color: rgba(0,0,0,0.8);
+			border: 3px solid beige;
+			background-color: beige;
+		}
+		img{
+			width: 260px;
+			height: 260px;
 		}
 	</style>
 </head>
@@ -32,97 +36,60 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li><a  href="index.html">Home</a></li>
-				<li><a  href="About.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a class="active" href="services.html">Gallery</a></li>
+				<li style="float:left;"><a  href="index.html">Home</a></li>
+				<li style="padding-left:250px;"><a  href="About.html">About</a></li>
+				<li style="padding-left:250px;"><a href="contact.html">Contact</a></li>
+				<li style="padding-left:250px;"><a class="active" href="services.html">Gallery</a></li>
 			</ul>
 		</div>
 		<br>
 		<div id="main">
-			
-			<ul class="services">
-				<li>
+			<div class="image-grid">
+				<div class="inline">
+					<img  src="blayke-babyshoot/blayke-cover.jpg" alt="">
+					<button type="btn btn primary"style="width: 260px;height:50px"><a href="Babyshoot.html">Blayke-Babyshoot</a></button>
+				</div>
+				<div class="inline">
+				<img  src="AJ&RJ/AJ-cover.jpg" alt="">
+				<button style="width: 260px;height:50px"><a href="AJ&RJ.html">AJ&JR-Babyshoot</a></button>
+				</div>
+				<div class="inline"><img src="Caitlin-Farewell/caitlin-cover.jpg" alt="">
+				<button style="width: 260px;height:50px"><a href="Caitlin.html">Caitlin-Farewell</a></button>
+				</div>
+				<div class="inline">
+					<img src="Zander/zander-cover.jpg" alt="">
+					<button style="width: 260px;height:50px"><a href="Zander.html">Zander-Babyshoot</a></button>
+					</div>
+				
+				<div class="inline">
+					<img  src="Matteo/matteo-cover.jpg" alt="">
+					<button style="width: 260px;height:50px"><a href="Matteo.html">Matteo-Babyshoot</a></button>
+				</div>
+				<div class="inline">
+					<img  src="Honeymoon/honeymoon-cover.jpg" alt="">
+					<button type="btn btn primary"style="width: 260px;height:50px"><a href="honeymoon.html">Honeymoon</a></button>
+				</div>
+				<div class="inline">
+				<img  src="Jooste/jooste-cover.jpg" alt="">
+				<button style="width: 260px;height:50px"><a href="Jooste.html">Jooste-Family</a></button>
+				</div>
+				<div class="inline">
+				<img src="Marlene/marlene-cover.jpg" alt="">
+				<button style="width: 260px;height:50px"><a href="Marlene-Babyshower.html">Marlene-Babyshower</a></button>
+				</div>
 					
-					<div class="row">
-						<div class="column">
-							<a href="Babyshoot.html">Blayke-Babyshoot</a>
-							<img src="blayke-babyshoot/blayke-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="Caitlin.html">Caitlin-Farewell</a>
-							<img src="Caitlin-Farewell/caitlin-cover.jpg" alt="">
-						</div>
-					</div>
-					
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="honeymoon.html">HoneyMoon</a>
-							<img src="Honeymoon/honeymoon-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="Jooste.html">Jooste-Family</a>
-							<img src="Jooste/jooste-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="AJ&RJ.html">AJ & JR</a>
-							<img src="AJ&RJ/AJ-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="Marlene-Babyshower.html">Marlene-Babyshower</a>
-							<img src="Marlene/marlene-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="Matteo.html">Matteo-BabyShoot</a>
-							<img src="Matteo/matteo-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="row">
-						<div class="column">
-							<a href="Zander.html">Zander-Babyshoot</a>
-							<img src="Zander/zander-cover.jpg" alt="">
-						</div>
-					</div>
-				</li>
-			</ul>
-			
+			</div>
 		</div>
-		<div id="sidebar">
-			<a href="https://facebook.com/profile.php?id=100093667865199&mibextid=ZbWKwL"><ion-icon name="logo-facebook" style="width: 50px; height:40px;"></ion-icon></a>
-			<a href="https://instagram.com/rochellejacobsphotography?igshid=MzNINGNkZWQ4Mg=="><ion-icon name="logo-instagram" style="width: 50px; height:40px;"></ion-icon></a>
-			
-		</div>
+		
 		<div class="clr">
 			
 		</div>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 		<div id="footer">
-			<p>copy right &copy;2023</p>
+			<span><a style="float:right;" href="https://facebook.com/profile.php?id=100093667865199&mibextid=ZbWKwL"><ion-icon name="logo-facebook" style="width: 50px; height:40px;"></ion-icon></a>
+			<a style="float:left" href="https://instagram.com/rochellejacobsphotography?igshid=MzNINGNkZWQ4Mg=="><ion-icon name="logo-instagram" style="width: 50px; height:40px;"></ion-icon></a></span>
+			<center><p>copy right &copy;2023</p></center>
 		</div>
 	</div>
 </body>
