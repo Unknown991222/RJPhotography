@@ -139,12 +139,12 @@ input ,textarea{
 	display: inline-block;
 	justify-content:center;
 	align-items: center;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	/*padding: 20px 100px 20px 20px;*/
 }
 .image-grid{
-    --gap:14px;
+    --gap:8px;
     --num-cols:4;
 	
     --row-height:300px;
@@ -188,9 +188,11 @@ input ,textarea{
 }
 div .inline{
 	display: inline-block;
-	padding-left: 25px;
+	align-items: center;
+	padding-left: 15px;
+	/*padding-left: 25px;
 	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 25px;*/
 }
 div .inline button{
 	border-style: none;
